@@ -1,0 +1,23 @@
+Este juego es en formato nodejs.
+
+Requisitos:
+
+    * nodejs instalado.
+    * Una vez descargado el reposositorio ejecutar npm install para instalar las dependencias.
+    * Cuando tengamos ya instalada las dependencias. Ejecutaremos npm start ( este script hace correr el juego)
+
+Juego: 
+
+4 en línea.
+
+* Consta de 2 jugadores Player1 (red) y Player2 (blue)
+* Pedirá dos nombres para tenerlos como referencia.
+* Cuando el juego empiece, el primer turno es para el PLayer1 es decir el Red.
+* Por cada turno cada jugar dirá una columna a la que quiera meter la ficha y esta se colocará inmediatamente en la posición de [fila][columna] que encuentre disponible.
+
+* Ganará el que tengas 4 fichas seguidas en horizontal, vertical o diagonal.
+
+
+Este juego fue hecho únicamente para la prueba técnica, hay muchas mejoras. He pensado en crear una base de datos donde registrar las nuevas puntuaciones y records y muchas cosas más que iré implementando a medida que vaya poniendo más horas a este repositorio.
+
+Os agradecería un feedback sobre las mejoras de código que haríais ya que eso me sirve mucho para aprender. 
