@@ -43,8 +43,8 @@ const iniciarjuego = async () => {
     return iniciarjuego();
   }
 
-  if(!regexp.test(player2.nombre_Player1)) {
-    console.log(`tu nombre tiene que tener al menos un caracter ${player2.nombre_Player1}`)
+  if(!regexp.test(player2.nombre_Player2)) {
+    console.log(`tu nombre tiene que tener al menos un caracter ${player2.nombre_Player2}`)
     return iniciarjuego();
   }
   
@@ -126,8 +126,7 @@ const iniciarjuego = async () => {
   }
 
   const partida = async()=>{
-
-    while(player1.fichas > 0 && player1.fichas>0){
+    while(player1.fichas > 0 && player2.fichas>0){
       if (turno == 0){
         const columna = await prompt.get(["Dime_columna"])
 
@@ -137,8 +136,6 @@ const iniciarjuego = async () => {
           console.log("Tienen que ser números no letras")
           continue
         } */
-        
-
 
         if ( Number(columna.Dime_columna) < 0 || columna.Dime_columna == "" || Number(columna.Dime_columna) > 7 ) { 
           console.log("Tiene que ser un número válido. No puede ser menor a 0, no puede ser mayor o igual a 6 y no puede ser un caracter vacío")
